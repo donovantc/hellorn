@@ -114,12 +114,12 @@ android {
         }
     }
     signingConfigs {
-        release {
-                    keyAlias System.getenv("BITRISEIO_ANDROID_KEYSTORE_ALIAS")
-                    keyPassword System.getenv("BITRISEIO_ANDROID_KEYSTORE_PRIVATE_KEY_PASSWORD")
-                    storeFile file(System.getenv("HOME") + "/keystores/my_-release-key.jks")
-                    storePassword System.getenv("BITRISEIO_ANDROID_KEYSTORE_PASSWORD")
-                }
+      //  release {
+      //              keyAlias System.getenv("BITRISEIO_ANDROID_KEYSTORE_ALIAS")
+      //              keyPassword System.getenv("BITRISEIO_ANDROID_KEYSTORE_PRIVATE_KEY_PASSWORD")
+      //              storeFile file(System.getenv("HOME") + "/keystores/my_-release-key.jks")
+      //              storePassword System.getenv("BITRISEIO_ANDROID_KEYSTORE_PASSWORD")
+      //          }
 
     //        release {
     //            storeFile file(MYAPP_RELEASE_STORE_FILE)
@@ -140,7 +140,7 @@ android {
         release {
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
-            signingConfig signingConfigs.release
+            //signingConfig signingConfigs.release
         }
     }
     // applicationVariants are e.g. debug, release
